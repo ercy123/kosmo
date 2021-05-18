@@ -1,0 +1,29 @@
+package CH04;
+
+import java.util.Scanner;
+// 사칙연산을 수행하는 프로그램 Switch-case 문
+public class Homework1_0518P123Q1_2 {
+
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 2;
+		
+		Scanner scanner = new Scanner(System.in);
+		String operator1 = scanner.nextLine();
+		char operator2 = operator1.charAt(0);
+
+		switch(operator2)
+		{
+			case '+' : System.out.println(num1+num2);
+				break;
+			case '-' : System.out.println(num1-num2);
+				break;
+			case '*' : System.out.println(num1*num2);
+				break;
+			case '/' : System.out.println(num1/num2);
+				break;
+		}
+		
+	}
+
+}
