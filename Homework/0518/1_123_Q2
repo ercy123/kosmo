@@ -1,0 +1,32 @@
+package CH04;
+
+import java.util.Scanner;
+
+public class Homework1_0518P123Q2 {
+	public static void main(String[] args) {
+   // 구구단을 짝수단만 출력
+		int dan;
+		int i;
+		
+		System.out.println("단을 입력하세요");
+		Scanner scanner = new Scanner(System.in);
+		dan = scanner.nextInt();
+		
+		for(i=1;i<=9;i++)
+		{
+			if(i%2==0)
+			{
+				System.out.println(dan+" * "+i+" = " + (i*dan));
+			}
+			else
+			{
+				continue;
+				
+			}
+		
+		}
+		
+		
+	}
+
+}
