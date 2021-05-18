@@ -3,7 +3,7 @@ package CH04;
 import java.util.Scanner;
 
 public class Homework1_0518P123Q1 {
-
+//사칙연산을 수행하는 프로그램 if - else if문
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int num1=10;
