@@ -1,0 +1,30 @@
+package CH04;
+
+public class Homework1_0518P123Q4 {
+
+	public static void main(String[] args) {
+		 // 별모양 피라미드 생성
+		int i;
+		int j;
+		int k;		
+		int num = 4;
+		for(i=0; i<num; i++)
+		{
+
+			for(j=1; j < num-i ;j++)
+			{
+				System.out.print(" ");
+			}
+
+			for (k=0; k<i*2+1 ; k++)
+			{
+				System.out.print("*");
+			
+			}
+			System.out.println();
+			
+		}
+
+	}
+
+}
