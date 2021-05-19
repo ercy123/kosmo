@@ -1,0 +1,51 @@
+package CH04;
+
+import java.util.Scanner;
+
+public class Homework3_0518_BMI {
+ // 몸무게+100-키 >0 일시 비만 출력, -1,q 입력시 종료
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String weight;
+		String height;
+
+		while(true)
+		{
+			System.out.println("키를 입력하세요");
+			height = scanner.nextLine();
+			System.out.println("몸무게를 입력하세요");
+			weight = scanner.nextLine();	
+			if (weight.equals("q") || weight.equals("-1"))
+			{
+				break;
+			}
+			if (height.equals("q") || height.equals("-1"))
+			{
+				break;
+			}
+			else
+			{
+				int weight1 = Integer.parseInt(weight);
+				int height1 = Integer.parseInt(height);
+				int bmi = weight1 + 100 - height1; 
+				if(bmi>0)
+				{
+					System.out.println(bmi + "비만");
+					
+				}
+				else
+				{
+					System.out.println(bmi + "비만이 아님");
+				}
+		
+			}
+			
+
+		}
+		
+		
+
+	}
+
+}
