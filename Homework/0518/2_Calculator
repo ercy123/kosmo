@@ -1,0 +1,43 @@
+package CH04;
+
+import java.util.Scanner;
+
+public class Homework1_0518_Calculator {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("피연산자1을 입력하시오(숫자)");
+		int num1 = scanner.nextInt();
+		int total=0;				
+		char operator2;
+		System.out.println("연산자를 입력하시오(+,-,*,/)");
+		operator2 = scanner.next().charAt(0);	
+		System.out.println("피연산자2를 입력하시오(숫자)");
+		int num2 = scanner.nextInt();		
+		
+		if(operator2 == '+')
+		{
+			total=num1+num2;
+		}
+		else if(operator2== '-')
+		{
+			total=num1-num2;
+		}
+		else if(operator2=='*')
+		{
+			total=num1*num2;
+		}
+		else if(operator2=='/')
+		{
+			total=num1/num2;
+		}
+		
+		System.out.println("answer :" + total);
+
+	}		
+			
+		
+	
+
+}
