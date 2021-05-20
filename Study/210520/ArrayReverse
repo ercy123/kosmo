@@ -1,0 +1,18 @@
+package java0520;
+
+import java.util.Scanner;
+
+public class ArrayReverse_Practice {
+ // 공백을 두고 입력한 문자를 역순으로 재출력
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String[] str2 = str1.split(" ");
+		for(int i=0;i<str2.length;i++)
+		{
+			System.out.print(str2[str2.length-i-1]);
+			System.out.print(" ");
+		}
+	}
+
+}
