@@ -19,7 +19,7 @@ public class Homework210520_hourglass {
 			{
 				System.out.print((k < j) ? " " : "*" );
 			}
-			if(i<4)
+			if(i<num1-1)
 			{
 				j++;
 			}
