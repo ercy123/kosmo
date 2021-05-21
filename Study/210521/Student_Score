@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Array_Score_Student_Answer {
 
 	public static void main(String[] args) {
-		
+		// 학생 5명 이름/과학/수학 점수 입력 후 총합과 평균 출력
 		Scanner sc = new Scanner(System.in);
 		String student[] = new String[5];
 		int math=0;
