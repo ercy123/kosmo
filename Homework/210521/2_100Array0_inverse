@@ -1,0 +1,37 @@
+package Homework0521;
+
+import java.util.Scanner;
+
+public class Homework2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = 0;
+		int i=0;
+		int arr1[] = new int[100];
+
+
+		while(true)
+		{
+			System.out.println("숫자를 입력"); // 3 5 1 0 // arr1[0] = 3 , arr1[1]= 5; 
+			arr1[i] = sc.nextInt();
+			if(arr1[i]==0)
+			{
+				i--;
+				for(int j=0;j<=i;j++)
+				{
+					System.out.print(arr1[i-j]);
+					System.out.print(" ");
+				}
+			}
+			i++;
+			
+			
+		}
+
+		
+
+
+	}
+
+}
