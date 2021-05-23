@@ -1,0 +1,46 @@
+package Homework0521;
+
+import java.util.Scanner;
+
+public class Homework1 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int count1=0;
+		int countAll=0;
+
+		
+		while(true)
+		{
+			System.out.println("숫자를 입력");
+			int num1 = sc.nextInt();
+			char A= 'A';
+			if (3 <= num1 && num1<=10)
+			{
+				for (int j =0; j<num1;j++)
+				{
+					for(int i = 0;i<num1-j;i++) // 65+0 / 1 // 65+1 // 2 // 65+2 // 3
+					{
+							System.out.print((char)(65+i+countAll));
+							
+							count1++;						
+	
+					}
+					countAll+=count1;
+					count1=0;
+					System.out.println();
+					
+					
+				}
+			}
+
+			
+			else
+			{
+				System.out.println("3 이상 10 이하 숫자만 입력");
+				
+			}
+		}
+	}
+
+}
