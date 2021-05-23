@@ -1,0 +1,42 @@
+package Homework0521;
+
+import java.util.Scanner;
+
+public class Homework3 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 입력");
+		int num1= sc.nextInt();
+		int j=1;
+		
+		for(int i=0;i<=num1;i++)
+		{
+	
+			for(int k=0;k<num1;k++)
+			{
+				if(k>=num1-i)
+				{
+				System.out.print(j);
+				j++;
+				}
+				
+				
+				else
+				{
+				System.out.print(" ");
+				}
+				
+				System.out.print(" ");
+				
+			}
+			System.out.println();
+			j=1;
+		}
+		
+		
+	}
+
+}
