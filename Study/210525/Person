@@ -1,0 +1,36 @@
+package java0525sub;
+
+public class Person {
+
+	String name;
+	float height;
+	float weight;
+
+	// 특별한 메소드
+	// Class 이름과 같다.
+	// return 타입 X
+	
+	public Person() {
+		height = 0;   // 기본값
+		weight = -1; // 기본값
+		System.out.println("Person 생성자" + "Weight: " + weight +
+				"Height" + height );
+		
+		
+	}
+	
+	// 2 매개변수 생성자
+	
+	public Person(String n) {
+		name = n;
+		System.out.println(name +":"+ "w: " + weight + " h: " + height );
+	}
+	
+	public Person(String n, float w, float h) {
+		name = n;
+		weight = w;
+		height = h;
+		
+		System.out.println(name +":"+ "w: " + weight + " h: " + height );
+	}
+}
