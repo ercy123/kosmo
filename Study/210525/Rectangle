@@ -1,0 +1,30 @@
+package java0525sub;
+
+public class Rectangle {
+	
+	String name;
+	int width;
+	int height;
+	
+	
+	public Rectangle(String n, int w, int h) {
+		name = n;
+		width = w;
+		height = h;
+//		System.out.println("name :" + name +" w: " + width + " h : " + height);
+	}
+	public int getArea() {
+
+		int result=width*height;
+//		System.out.println("Area : " + result);
+		return result;
+	}
+	public int getArea2(int w, int h) {
+		width = w;
+		height = h;
+		int result=width*height;
+//		System.out.println("Area : " + result);
+		return result;
+	}
+	
+}
