@@ -1,0 +1,14 @@
+package java0525sub;
+
+public class CircleMain {
+
+	public static void main(String[] args) {
+
+		Circle cc = new Circle("pizza",10);
+		Circle cc2 = new Circle("donught",2);		
+
+		
+		System.out.println("name: " + cc.name + "area: "+cc.getArea());
+		System.out.println("name: " + cc2.name + "area: "+cc2.getArea());	}
+
+}
