@@ -1,0 +1,16 @@
+package java0526.Inherit;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+		
+		Calculator cal1 = new Calculator();
+		cal1.setOperand(10, 20);
+		System.out.println(cal1.sum());
+		SubCalculator cal2 = new SubCalculator();
+		cal2.setOperand(10, 20);
+		System.out.println(cal2.sub());
+		
+	}
+
+}
