@@ -1,0 +1,25 @@
+package java0526.Inherit;
+
+public class VIPCustomer extends Customer {
+	
+	private int agentID;
+	double saleRatio;
+
+	public VIPCustomer() {
+		//super();
+		customerGrade = "VIP";
+		bonusRatio = 0.05;
+		saleRatio = 0.01;
+		System.out.println("VIPCustomer 생성자 호출");
+	}
+	
+	public String VIPCustomerInfo() {
+	
+		return super.showCustomerInfo() + "담당 상담원: " + agentID;	
+	}
+	public int getAgentID() {
+		return agentID;
+	
+	}
+	
+}
