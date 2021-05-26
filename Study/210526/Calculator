@@ -1,0 +1,34 @@
+package java0526.Inherit;
+
+public class Calculator {
+	
+	protected int op1;
+	protected int op2;
+	
+	public Calculator() {
+		this(0,0);
+	}
+	public Calculator(int op1,int op2) {
+		this.op1=op1;
+		this.op2=op2;
+	}
+	
+	
+	
+	public void setOperand(int op1,int op2){
+		this.op1=op1;
+		this.op2=op2;
+		
+	}
+	public int sum(int op1,int op2) {
+		return op1+op2;
+	}
+	public int sum() {
+		return this.op1+this.op1;
+	}
+	
+	
+	public int avg() {
+		return this.op1+this.op2/2;
+	}
+}
